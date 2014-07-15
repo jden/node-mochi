@@ -8,6 +8,7 @@ I'm just going to copy and paste the implementation into this readme so you know
 ```js
 require('mocha')
 var chai = require('chai')
+chai.use(require('chai-interface'))
 chai.should()
 
 module.exports = chai
@@ -28,7 +29,7 @@ $ npm install --save-dev mochi
 
 ## why
 
-I like to make dependencies explicit. I found myself getting lazy and not typing `require('mocha')` at the top of my tests. I would type a `require('chai')` because I had to. This lets me type just one require, but still be explicit.
+I like to make dependencies explicit. I found myself getting lazy and not typing `require('mocha')` at the top of my tests. I would type a `require('chai')` because I had to. This lets me type just one require, but still be explicit. this is like a symlink for my regular testing patterns.
 
 ## contributions
 feel free to open an issue
