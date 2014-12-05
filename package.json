@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "mochi": "bin/mochi"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/jden/node-mochi.git"
